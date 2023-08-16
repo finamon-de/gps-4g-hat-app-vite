@@ -1,0 +1,44 @@
+{
+  "name": "gps-4g-hat-app-vite",
+  "version": "0.1.0",
+  "description": "Web App implementation based on Vite to help getting started with the GPS 4G HAT",
+  "author": "Finamon AG",
+  "homepage": "https://github.com/finamon-de/gps-4g-hat-app-vite",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finamon-de/gps-4g-hat-app-vite"
+  },
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE.md",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/debounce": "^1.2.1",
+    "@types/mapbox-gl": "^2.7.13",
+    "bootstrap": "^5.3.1",
+    "debounce": "^1.2.1",
+    "mapbox-gl": "^2.15.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.15.0",
+    "react-router-dom": "^6.15.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}

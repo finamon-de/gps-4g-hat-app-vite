@@ -1,0 +1,12 @@
+/**
+ * Doesn't work with bootstrap 5.1.x.
+ * There's a bug in how the sass files are managed which needs to be fixed first.
+ */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #162a3b,
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap.scss";

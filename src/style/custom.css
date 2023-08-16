@@ -1,0 +1,49 @@
+:root {
+    --shadow-color: 0deg 0% 68%;
+    --shadow-elevation-low:
+      0px 0.3px 0.3px hsl(var(--shadow-color) / 0.24),
+      0px 0.5px 0.6px -1.2px hsl(var(--shadow-color) / 0.24),
+      0px 1.1px 1.2px -2.5px hsl(var(--shadow-color) / 0.24);
+    --shadow-elevation-medium:
+      0px 0.3px 0.3px hsl(var(--shadow-color) / 0.25),
+      0px 1px 1.1px -0.8px hsl(var(--shadow-color) / 0.25),
+      0px 2.4px 2.7px -1.7px hsl(var(--shadow-color) / 0.25),
+      0px 5.7px 6.4px -2.5px hsl(var(--shadow-color) / 0.25);
+    --shadow-elevation-high:
+      0px 0.3px 0.3px hsl(var(--shadow-color) / 0.23),
+      0px 1.5px 1.7px -0.4px hsl(var(--shadow-color) / 0.23),
+      0px 2.6px 2.9px -0.7px hsl(var(--shadow-color) / 0.23),
+      0px 4.3px 4.8px -1.1px hsl(var(--shadow-color) / 0.23),
+      0px 6.7px 7.5px -1.4px hsl(var(--shadow-color) / 0.23),
+      -0.1px 10.5px 11.8px -1.8px hsl(var(--shadow-color) / 0.23),
+      -0.1px 15.9px 17.9px -2.1px hsl(var(--shadow-color) / 0.23),
+      -0.1px 23.3px 26.2px -2.5px hsl(var(--shadow-color) / 0.23);
+}
+body{
+    background-color: #f4f4f4;
+}
+.sidebar-sticky {
+    height: calc(100vh - 48px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.has-shadow {
+    box-shadow: var(--shadow-elevation-medium);
+}
+.card.has-shadow:hover {
+    box-shadow: var(--shadow-elevation-high);
+}
+.has-no-border {
+    border: none;
+}
+
+/** Overrides */
+.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1;
+    color: var(--bs-list-group-action-hover-color);
+    text-decoration: none;
+    background-color: inherit;
+}
+.has-inherited-bg {
+    background-color: inherit;
+}
